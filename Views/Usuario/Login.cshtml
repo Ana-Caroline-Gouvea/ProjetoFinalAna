@@ -1,0 +1,25 @@
+﻿@model ProjetoFinalAna.Models.Usuario
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+
+<h1><img src="~/css/img/micro.png"/>ClinicGov</h1>
+<div class="text-center">
+    <form asp-action="Login">
+        <div class="email">
+            <label asp-for="UsuarioEmail"></label>
+            <input asp-for="UsuarioEmail" />
+            <span asp-validation-for="UsuarioEmail"></span>
+        </div>
+        <div class="senha">
+            <label asp-for="UsuarioSenha"></label>
+            <input asp-for="UsuarioSenha" type="password" />
+            <span asp-validation-for="UsuarioSenha"></span>
+        </div>
+        <br />
+        <div class="Entrar">
+            <input class="hover" type="submit" value="Entrar"
+        </div>
+    </form>
+</div>

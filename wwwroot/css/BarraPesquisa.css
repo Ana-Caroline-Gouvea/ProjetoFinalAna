@@ -1,0 +1,55 @@
+﻿body {
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+button{
+    margin-top: 15px;
+}
+.search {
+    margin-top: 30px;
+    float: right;
+}
+
+a {
+    color: #045B62;
+    text-decoration: none;
+}
+.button{
+    margin-top: 12px;
+    display: flex;
+    column-gap: 265px;
+}
+.buttonVoltar {
+    height: 40px;
+    width: 80px;
+    background-color: #12BADB;
+    border: solid 1.8px #0E97B3;
+    padding: 7px 7px 7px 15px;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.buttonVoltar > a{
+    color: white;
+}
+.row {
+    margin: 0 auto;
+}
+.col-md-4{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.btn-primary {
+    height: 40px;
+    width: 80px;
+    padding: 7px 7px 7px 8px;
+    background-color: #12BADB;
+    color: white;
+    border: solid 1.8px #0E97B3;
+}
+.pesquisa {
+    background-color: #75BFDC;
+    border: solid 2px #75BFDC;
+    border-radius: 3px;
+}

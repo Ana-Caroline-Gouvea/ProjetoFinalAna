@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProjetoFinalAna.Models.LocalRealizacao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/BarraPesquisa.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Hover.css" asp-append-version="true" />
+
+<h1>Local do Exame</h1>
+
+<div>
+    <a class="hover btn btn-primary" asp-action="Create">Criar novo</a>
+    @using (Html.BeginForm("Index", "LocalRealizacao", FormMethod.Get))
+    {
+            <p class="search">
+                Buscar: @Html.TextBox("pesquisa")
+                <input class="pesquisa" type="submit" value="Pesquisar" />
+            </p>
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalNome)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Cidade.CidadeNome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,76 @@
+﻿body {
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(239, 239, 239);
+}
+
+main {
+    width: 99%;
+    height: 700px;
+    margin: 0 auto;
+    border: 1.5px solid black;
+    margin-top: 60px;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0px;
+}
+
+.info {
+    font-size: 20px;
+    column-gap: 210px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.infoExame {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-left: 85px;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.nomeBold {
+    font-weight: bold;
+}
+
+.referencias {
+    margin: 18px;
+    margin-left: 85px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.resul {
+    margin: 18px;
+    width: 85%;
+    height: 30px;
+    margin-left: 85px;
+}
+
+.nomeCor {
+    color: red;
+}
+
+.metodo {
+    margin-left: 85px;
+    margin-top: 12px;
+}
+
+hr {
+    width: 90%;
+    border: 1.5px solid black;
+}
